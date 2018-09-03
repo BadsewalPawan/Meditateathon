@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302BE9A62135AB100007BBE8 /* TimerProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A52135AB100007BBE8 /* TimerProgressBar.swift */; };
+		302BE9A82135ACB30007BBE8 /* customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A72135ACB30007BBE8 /* customColors.swift */; };
+		302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A92135BF860007BBE8 /* CountDownTimer.swift */; };
+		302C12F921315FAB006EB79D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C12F821315FAB006EB79D /* SignUpVC.swift */; };
+		302C12FB213160CA006EB79D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C12FA213160CA006EB79D /* SignInVC.swift */; };
+		302C91C32134751B0045EF02 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C22134751B0045EF02 /* TimerVC.swift */; };
+		302C91C92134765F0045EF02 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C82134765F0045EF02 /* ProfileVC.swift */; };
+		302F9994213D3293002F8729 /* EndingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9992213D3293002F8729 /* EndingBell.mp3 */; };
+		302F9995213D3293002F8729 /* RepeatingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9993213D3293002F8729 /* RepeatingBell.mp3 */; };
 		3045AF5721311762006FADB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045AF5621311762006FADB0 /* AppDelegate.swift */; };
-		3045AF5921311762006FADB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045AF5821311762006FADB0 /* ViewController.swift */; };
 		3045AF5C21311762006FADB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5A21311762006FADB0 /* Main.storyboard */; };
 		3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5D21311764006FADB0 /* Assets.xcassets */; };
-		3045AF6121311764006FADB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5F21311764006FADB0 /* LaunchScreen.storyboard */; };
+		30B13AA821370F8D00909C7C /* MeditationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AA721370F8D00909C7C /* MeditationVC.swift */; };
+		30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AA9213712DD00909C7C /* SelectionVC.swift */; };
+		30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */; };
+		30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302BE9A52135AB100007BBE8 /* TimerProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProgressBar.swift; sourceTree = "<group>"; };
+		302BE9A72135ACB30007BBE8 /* customColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customColors.swift; sourceTree = "<group>"; };
+		302BE9A92135BF860007BBE8 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
+		302C12F821315FAB006EB79D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		302C12FA213160CA006EB79D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		302C91C22134751B0045EF02 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		302C91C82134765F0045EF02 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		302F9992213D3293002F8729 /* EndingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndingBell.mp3; sourceTree = "<group>"; };
+		302F9993213D3293002F8729 /* RepeatingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RepeatingBell.mp3; sourceTree = "<group>"; };
 		3045AF5321311762006FADB0 /* Meditateathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditateathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3045AF5621311762006FADB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3045AF5821311762006FADB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3045AF5B21311762006FADB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3045AF5D21311764006FADB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3045AF6021311764006FADB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3045AF6221311764006FADB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B13AA721370F8D00909C7C /* MeditationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationVC.swift; sourceTree = "<group>"; };
+		30B13AA9213712DD00909C7C /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
+		30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundVC.swift; sourceTree = "<group>"; };
+		30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +57,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302BE9AB2135C0BE0007BBE8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */,
+				302BE9A72135ACB30007BBE8 /* customColors.swift */,
+				302BE9A92135BF860007BBE8 /* CountDownTimer.swift */,
+				30B13AA721370F8D00909C7C /* MeditationVC.swift */,
+				30B13AA9213712DD00909C7C /* SelectionVC.swift */,
+				302BE9A52135AB100007BBE8 /* TimerProgressBar.swift */,
+				302C91C22134751B0045EF02 /* TimerVC.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		302BE9AC2135C0EC0007BBE8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				302C12FA213160CA006EB79D /* SignInVC.swift */,
+				302C12F821315FAB006EB79D /* SignUpVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		3045AF4A21311762006FADB0 = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +100,25 @@
 			isa = PBXGroup;
 			children = (
 				3045AF5621311762006FADB0 /* AppDelegate.swift */,
-				3045AF5821311762006FADB0 /* ViewController.swift */,
+				302C91C82134765F0045EF02 /* ProfileVC.swift */,
+				302BE9AC2135C0EC0007BBE8 /* Auth */,
+				30E0BCD921365FF5007E6DA4 /* Sounds */,
+				302BE9AB2135C0BE0007BBE8 /* Timer */,
 				3045AF5A21311762006FADB0 /* Main.storyboard */,
 				3045AF5D21311764006FADB0 /* Assets.xcassets */,
-				3045AF5F21311764006FADB0 /* LaunchScreen.storyboard */,
 				3045AF6221311764006FADB0 /* Info.plist */,
 			);
 			path = Meditateathon;
+			sourceTree = "<group>";
+		};
+		30E0BCD921365FF5007E6DA4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				302F9993213D3293002F8729 /* RepeatingBell.mp3 */,
+				302F9992213D3293002F8729 /* EndingBell.mp3 */,
+				30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3045AF6121311764006FADB0 /* LaunchScreen.storyboard in Resources */,
+				302F9995213D3293002F8729 /* RepeatingBell.mp3 in Resources */,
+				30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */,
 				3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */,
 				3045AF5C21311762006FADB0 /* Main.storyboard in Resources */,
+				302F9994213D3293002F8729 /* EndingBell.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3045AF5921311762006FADB0 /* ViewController.swift in Sources */,
+				302C12F921315FAB006EB79D /* SignUpVC.swift in Sources */,
+				302C91C92134765F0045EF02 /* ProfileVC.swift in Sources */,
+				302BE9A82135ACB30007BBE8 /* customColors.swift in Sources */,
 				3045AF5721311762006FADB0 /* AppDelegate.swift in Sources */,
+				302BE9A62135AB100007BBE8 /* TimerProgressBar.swift in Sources */,
+				30B13AA821370F8D00909C7C /* MeditationVC.swift in Sources */,
+				30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */,
+				302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */,
+				30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */,
+				302C91C32134751B0045EF02 /* TimerVC.swift in Sources */,
+				302C12FB213160CA006EB79D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +217,6 @@
 				3045AF5B21311762006FADB0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3045AF5F21311764006FADB0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3045AF6021311764006FADB0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GY622E6NGC;
 				INFOPLIST_FILE = Meditateathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GY622E6NGC;
 				INFOPLIST_FILE = Meditateathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
