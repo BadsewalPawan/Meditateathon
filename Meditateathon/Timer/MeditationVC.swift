@@ -83,6 +83,7 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
     
     @objc func playIntervalBell(){
         dummyDouble -= 0.01
+        print(dummyDouble)
         if(dummyDouble <= 0){
             playBell(bellName: "RepeatingBell")
             dummyDouble = Double(recievedRepeatInterval)
@@ -91,7 +92,9 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
     
     @objc func playFirstBell(){
         dummyDouble -= 0.01
+        print(dummyDouble)
         if(dummyDouble <= 0){
+            intervalTimer.invalidate()
             playBell(bellName: "RepeatingBell")
             if(recievedDoRepeat == true){
                 dummyDouble = Double(recievedRepeatInterval)
@@ -154,8 +157,8 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
         ProgressBar.start()
         playAudio()
         dummyDouble = Double(recievedFirstBellDuration)
+        print(dummyDouble)
         intervalTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(playFirstBell), userInfo: nil, repeats: true)
-        //intervalTimer = Timer.scheduledTimer(timeInterval: Double(recievedFirstBellDuration), target: self, selector: #selector(playFirstBell), userInfo: nil, repeats: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
