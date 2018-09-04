@@ -12,12 +12,12 @@
 		302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A92135BF860007BBE8 /* CountDownTimer.swift */; };
 		302C12F921315FAB006EB79D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C12F821315FAB006EB79D /* SignUpVC.swift */; };
 		302C12FB213160CA006EB79D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C12FA213160CA006EB79D /* SignInVC.swift */; };
+		302C85F8213EF7BC008471FF /* Hymn For The Weekend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */; };
 		302C91C32134751B0045EF02 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C22134751B0045EF02 /* TimerVC.swift */; };
 		302C91C92134765F0045EF02 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C82134765F0045EF02 /* ProfileVC.swift */; };
 		302F9994213D3293002F8729 /* EndingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9992213D3293002F8729 /* EndingBell.mp3 */; };
 		302F9995213D3293002F8729 /* RepeatingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9993213D3293002F8729 /* RepeatingBell.mp3 */; };
 		302F9997213D53C2002F8729 /* AmbientSoundCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302F9996213D53C2002F8729 /* AmbientSoundCVC.swift */; };
-		302F9999213D5D4C002F8729 /* AmbientSoundCRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302F9998213D5D4C002F8729 /* AmbientSoundCRV.swift */; };
 		3045AF5721311762006FADB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045AF5621311762006FADB0 /* AppDelegate.swift */; };
 		3045AF5C21311762006FADB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5A21311762006FADB0 /* Main.storyboard */; };
 		3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5D21311764006FADB0 /* Assets.xcassets */; };
@@ -33,12 +33,12 @@
 		302BE9A92135BF860007BBE8 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
 		302C12F821315FAB006EB79D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		302C12FA213160CA006EB79D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hymn For The Weekend.mp3"; sourceTree = "<group>"; };
 		302C91C22134751B0045EF02 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		302C91C82134765F0045EF02 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		302F9992213D3293002F8729 /* EndingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndingBell.mp3; sourceTree = "<group>"; };
 		302F9993213D3293002F8729 /* RepeatingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RepeatingBell.mp3; sourceTree = "<group>"; };
 		302F9996213D53C2002F8729 /* AmbientSoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundCVC.swift; sourceTree = "<group>"; };
-		302F9998213D5D4C002F8729 /* AmbientSoundCRV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundCRV.swift; sourceTree = "<group>"; };
 		3045AF5321311762006FADB0 /* Meditateathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditateathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3045AF5621311762006FADB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3045AF5B21311762006FADB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */,
-				302F9998213D5D4C002F8729 /* AmbientSoundCRV.swift */,
 				302F9996213D53C2002F8729 /* AmbientSoundCVC.swift */,
 				302BE9A72135ACB30007BBE8 /* customColors.swift */,
 				302BE9A92135BF860007BBE8 /* CountDownTimer.swift */,
@@ -123,6 +122,7 @@
 				302F9993213D3293002F8729 /* RepeatingBell.mp3 */,
 				302F9992213D3293002F8729 /* EndingBell.mp3 */,
 				30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */,
+				302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -186,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				302F9995213D3293002F8729 /* RepeatingBell.mp3 in Resources */,
+				302C85F8213EF7BC008471FF /* Hymn For The Weekend.mp3 in Resources */,
 				30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */,
 				3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */,
 				3045AF5C21311762006FADB0 /* Main.storyboard in Resources */,
@@ -210,7 +211,6 @@
 				30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */,
 				302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */,
 				30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */,
-				302F9999213D5D4C002F8729 /* AmbientSoundCRV.swift in Sources */,
 				302C91C32134751B0045EF02 /* TimerVC.swift in Sources */,
 				302C12FB213160CA006EB79D /* SignInVC.swift in Sources */,
 			);

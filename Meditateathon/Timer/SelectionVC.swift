@@ -16,6 +16,7 @@ class SelectionVC: UIViewController{
     var firstBellDuration:Int! = 60
     var repeatInterval:Int! = 60
     var doRepeat:Bool! = false
+    var selectedSound:String! = "BackgroundMusic"
     
     @IBOutlet var durationBtn: UIButton!
     @IBOutlet var intervalBtn: UIButton!
@@ -68,6 +69,7 @@ class SelectionVC: UIViewController{
             meditationVC.recievedDoRepeat = doRepeat
             meditationVC.recievedRepeatInterval = repeatInterval
             meditationVC.recievedFirstBellDuration = firstBellDuration
+            meditationVC.recievedSelectedSound = selectedSound
         }
     }
     
@@ -82,8 +84,8 @@ class SelectionVC: UIViewController{
         }else if(firstBellDuration == 0){
             intervalBtn.setTitle("None", for: .normal)
         }else{
-            intervalBtn.setTitle("1 single", for: .normal)
-        }
+            intervalBtn.setTitle("1 single", for: .normal)}
+        ambientSoundBtn.setTitle(selectedSound, for: .normal)
     }
     
     

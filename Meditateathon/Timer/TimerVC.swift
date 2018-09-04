@@ -52,6 +52,20 @@ extension TimerVC:UIPickerViewDelegate,UIPickerViewDataSource {
         }
     }
     
+    func checkForIntervalZero(){
+        if(firstBellHour == firstBellMinutes && firstBellHour == firstBellSeconds && firstBellHour == 0){
+            repeatBtn.isEnabled = false
+            repeatBtn.alpha = 0.5
+            sendDoRepeat = false
+            showHideOpts()
+        }else{
+            repeatBtn.isEnabled = true
+            repeatBtn.alpha = 1
+            sendDoRepeat = false
+            showHideOpts()
+        }
+    }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch component {
         case 0:
@@ -60,6 +74,7 @@ extension TimerVC:UIPickerViewDelegate,UIPickerViewDataSource {
                 hour = checkForZero(targetComponent: 0, targetElement: hour, firstElement: minutes, secondElement: seconds)
             }else{
                 firstBellHour = row
+                checkForIntervalZero()
             }
         case 1:
             if(pickerView == timePicker){
@@ -67,6 +82,7 @@ extension TimerVC:UIPickerViewDelegate,UIPickerViewDataSource {
                 minutes = checkForZero(targetComponent: 1, targetElement: minutes, firstElement: hour, secondElement: seconds)
             }else{
                 firstBellMinutes = row
+                checkForIntervalZero()
             }
         case 2:
             if(pickerView == timePicker){
@@ -74,6 +90,7 @@ extension TimerVC:UIPickerViewDelegate,UIPickerViewDataSource {
                 seconds = checkForZero(targetComponent: 2, targetElement: seconds, firstElement: hour, secondElement: minutes)
             }else{
                 firstBellSeconds = row
+                checkForIntervalZero()
             }
         default:
             break;
@@ -121,6 +138,22 @@ class TimerVC: UIViewController{
         targetBtn.frame.size.height = targetBtn.bounds.width
     }
     
+    func showHideOpts(){
+        if(sendDoRepeat){
+            repeatlbl.isHidden = false
+            repeatSlider.isHidden = false
+            timeIntervalStepper.isHidden = false
+            repeatBtn.setImage(#imageLiteral(resourceName: "repeatselected"), for: .normal)
+            sendRepeatInterval = Int(repeatSlider.value)
+        }else{
+            repeatlbl.isHidden = true
+            repeatSlider.isHidden = true
+            timeIntervalStepper.isHidden = true
+            repeatBtn.setImage(#imageLiteral(resourceName: "repeat!selected"), for: .normal)
+            sendRepeatInterval = 0
+        }
+    }
+    
     @IBAction func timerBBtnAction(_ sender: Any) {
         if((sender as AnyObject).tag == 1){
             durationBBtn.tintColor = .white
@@ -135,19 +168,7 @@ class TimerVC: UIViewController{
     
     @IBAction func showHiddenOpts(_ sender: UIButton) {
         sendDoRepeat = !sendDoRepeat
-        if(sendDoRepeat){
-            repeatlbl.isHidden = false
-            repeatSlider.isHidden = false
-            timeIntervalStepper.isHidden = false
-            repeatBtn.setImage(#imageLiteral(resourceName: "repeatselected"), for: .normal)
-            sendRepeatInterval = Int(repeatSlider.value)
-        }else{
-            repeatlbl.isHidden = true
-            repeatSlider.isHidden = true
-            timeIntervalStepper.isHidden = true
-            repeatBtn.setImage(#imageLiteral(resourceName: "repeat!selected"), for: .normal)
-            sendRepeatInterval = 0
-        }
+        showHideOpts()
     }
     
     

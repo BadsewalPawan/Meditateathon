@@ -21,6 +21,7 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
     var AudioPlayer:AVAudioPlayer!
     var intervalBellAudioPlayer:AVAudioPlayer!
     var intervalTimer:Timer!
+    var recievedSelectedSound:String!
     lazy var countdownTimer: CountdownTimer = {
         let countdownTimer = CountdownTimer()
         return countdownTimer
@@ -55,7 +56,7 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
     //playSound
     
     func playAudio(){
-        let path = Bundle.main.path(forResource: "BackgroundMusic" , ofType: "mp3")!
+        let path = Bundle.main.path(forResource: recievedSelectedSound , ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do{
             AudioPlayer = try AVAudioPlayer(contentsOf: url)
@@ -83,7 +84,6 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
     
     @objc func playIntervalBell(){
         dummyDouble -= 0.01
-        print(dummyDouble)
         if(dummyDouble <= 0){
             playBell(bellName: "RepeatingBell")
             dummyDouble = Double(recievedRepeatInterval)
@@ -92,7 +92,6 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
     
     @objc func playFirstBell(){
         dummyDouble -= 0.01
-        print(dummyDouble)
         if(dummyDouble <= 0){
             intervalTimer.invalidate()
             playBell(bellName: "RepeatingBell")
@@ -156,9 +155,9 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
         countdownTimer.start()
         ProgressBar.start()
         playAudio()
-        dummyDouble = Double(recievedFirstBellDuration)
-        print(dummyDouble)
-        intervalTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(playFirstBell), userInfo: nil, repeats: true)
+        if(recievedFirstBellDuration > 0){
+            dummyDouble = Double(recievedFirstBellDuration)
+            intervalTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(playFirstBell), userInfo: nil, repeats: true)}
     }
     
     override func viewWillAppear(_ animated: Bool) {
