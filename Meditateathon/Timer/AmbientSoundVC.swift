@@ -89,6 +89,8 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
             endingBellBBtn.tintColor = .white
             ambientSoundBBtn.tintColor = .lightGray
             switchView(targetView: ambientSoundView, targetStatus: true)
+            playAudio(targetSound: sendSelectedSound)
+            AudioPlayer.pause()
         }
     }
     
