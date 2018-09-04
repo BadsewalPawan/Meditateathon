@@ -19,6 +19,8 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
     var sendSelectedSound:String! = "BackgroundMusic"
     
     @IBOutlet var ambientSoundView: UIView!
+    @IBOutlet var endingBellBBtn: UIBarButtonItem!
+    @IBOutlet var ambientSoundBBtn: UIBarButtonItem!
     
     @IBOutlet var ambientSoundCV: UICollectionView!
     
@@ -43,6 +45,12 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     //custom fn
+    
+    func switchView(targetView: UIView, targetStatus:Bool) {
+        UIView.transition(with: view, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            targetView.isHidden = targetStatus
+        })
+    }
     
     func playAudio(targetSound:String){
         let path = Bundle.main.path(forResource: targetSound, ofType: "mp3")!
@@ -72,10 +80,15 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
-    @IBAction func hideAmbientSoundView(_ sender: UIButton) {
-        if(sender.tag == 1){
-            ambientSoundView.isHidden = true
-            AudioPlayer.pause()
+    @IBAction func animateBBtn(_ sender: Any) {
+        if((sender as AnyObject).tag == 1){
+            ambientSoundBBtn.tintColor = .white
+            endingBellBBtn.tintColor = .lightGray
+            switchView(targetView: ambientSoundView, targetStatus: false)
+        }else{
+            endingBellBBtn.tintColor = .white
+            ambientSoundBBtn.tintColor = .lightGray
+            switchView(targetView: ambientSoundView, targetStatus: true)
         }
     }
     

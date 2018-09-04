@@ -490,7 +490,7 @@
                                             <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="hideAmbientSoundView:" destination="KPr-lz-ziy" eventType="touchUpInside" id="w4q-l3-gOS"/>
+                                            <action selector="animateBBtn:" destination="KPr-lz-ziy" eventType="touchUpInside" id="MNh-iF-vMQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -502,17 +502,25 @@
                     </view>
                     <navigationItem key="navigationItem" id="XEh-CS-t0N">
                         <rightBarButtonItems>
-                            <barButtonItem title="Ending bell" width="100" id="ygX-Po-8bh">
+                            <barButtonItem tag="2" title="Ending bell" width="100" id="ygX-Po-8bh">
                                 <color key="tintColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="animateBBtn:" destination="KPr-lz-ziy" id="7Bu-KK-IgZ"/>
+                                </connections>
                             </barButtonItem>
-                            <barButtonItem title="Ambient sound" width="100" id="cm5-zE-D6E">
+                            <barButtonItem tag="1" title="Ambient sound" width="100" id="cm5-zE-D6E">
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="animateBBtn:" destination="KPr-lz-ziy" id="UOD-My-idY"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="ambientSoundBBtn" destination="cm5-zE-D6E" id="5J1-Tc-VpZ"/>
                         <outlet property="ambientSoundCV" destination="L1E-r8-VgU" id="ooB-il-BRz"/>
                         <outlet property="ambientSoundView" destination="I41-9X-9QG" id="sSu-pl-BSg"/>
+                        <outlet property="endingBellBBtn" destination="ygX-Po-8bh" id="IFW-P2-bS6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUD-ju-uMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
