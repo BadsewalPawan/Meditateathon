@@ -13,7 +13,7 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
     
     var soundNames:Array<String> = ["BackgroundMusic", "Hymn For The Weekend", "BackgroundMusic", "Hymn For The Weekend", "BackgroundMusic", "Hymn For The Weekend", "BackgroundMusic", "Hymn For The Weekend"]
     var soundImages:Array<UIImage> = [#imageLiteral(resourceName: "moonLight"), #imageLiteral(resourceName: "river"), #imageLiteral(resourceName: "om"), #imageLiteral(resourceName: "birds"), #imageLiteral(resourceName: "moonLight"), #imageLiteral(resourceName: "river"), #imageLiteral(resourceName: "om"), #imageLiteral(resourceName: "birds")]
-    
+
     
     var AudioPlayer:AVAudioPlayer!
     var sendSelectedSound:String! = "BackgroundMusic"
@@ -21,10 +21,10 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet var ambientSoundView: UIView!
     @IBOutlet var endingBellBBtn: UIBarButtonItem!
     @IBOutlet var ambientSoundBBtn: UIBarButtonItem!
-    
+    @IBOutlet var soundNamelbl: UILabel!
     @IBOutlet var ambientSoundCV: UICollectionView!
     
-    //CV fn
+    //CV
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return soundImages.count
@@ -39,12 +39,14 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         sendSelectedSound = soundNames[indexPath.row]
+        soundNamelbl.text = sendSelectedSound
         let selectedCell = collectionView.cellForItem(at: indexPath)
         selectCell(targetCell: selectedCell!)
         playAudio(targetSound: sendSelectedSound)
     }
     
-    //custom fn
+    
+    //custom
     
     func switchView(targetView: UIView, targetStatus:Bool) {
         UIView.transition(with: view, duration: 0.5, options: .transitionCrossDissolve, animations: {
@@ -115,5 +117,6 @@ class AmbientSoundVC: UIViewController, UICollectionViewDataSource, UICollection
         ambientSoundCV.performBatchUpdates(nil) { (result) in
             self.selectCell(targetCell: self.ambientSoundCV.cellForItem(at: IndexPath(row: 0, section: 0))!)
         }
+        soundNamelbl.text = sendSelectedSound
     }
 }

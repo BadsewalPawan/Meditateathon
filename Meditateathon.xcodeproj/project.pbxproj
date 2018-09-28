@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3002503B214B846A000A46EF /* AboutCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002503A214B846A000A46EF /* AboutCourseVC.swift */; };
+		3002503D214B851B000A46EF /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002503C214B851A000A46EF /* ProfileTVC.swift */; };
+		300BBEBD214FB4EA00986A3E /* courseImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBEBB214FB4EA00986A3E /* courseImageTVC.swift */; };
+		300BBEBE214FB4EA00986A3E /* courseImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBEBC214FB4EA00986A3E /* courseImageTVC.xib */; };
+		300BBEC4214FB67200986A3E /* courseHeadingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBEC2214FB67200986A3E /* courseHeadingTVC.swift */; };
+		300BBEC5214FB67200986A3E /* courseHeadingTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBEC3214FB67200986A3E /* courseHeadingTVC.xib */; };
+		300BBEC8214FB72300986A3E /* courseDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBEC6214FB72300986A3E /* courseDetailTVC.swift */; };
+		300BBEC9214FB72300986A3E /* courseDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBEC7214FB72300986A3E /* courseDetailTVC.xib */; };
+		300BBECC214FB7D700986A3E /* courseDescriptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBECA214FB7D700986A3E /* courseDescriptionTVC.swift */; };
+		300BBECD214FB7D700986A3E /* courseDescriptionTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBECB214FB7D700986A3E /* courseDescriptionTVC.xib */; };
+		300BBED0214FB89100986A3E /* courseAudioReplyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBECE214FB89100986A3E /* courseAudioReplyTVC.swift */; };
+		300BBED1214FB89100986A3E /* courseAudioReplyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBECF214FB89100986A3E /* courseAudioReplyTVC.xib */; };
+		300BBED4214FC01B00986A3E /* audioReplyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBED2214FC01B00986A3E /* audioReplyCVC.swift */; };
+		300BBED5214FC01B00986A3E /* audioReplyCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBED3214FC01B00986A3E /* audioReplyCVC.xib */; };
+		300BBED8214FC95200986A3E /* courseReviewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBED6214FC95200986A3E /* courseReviewTVC.swift */; };
+		300BBED9214FC95200986A3E /* courseReviewTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBED7214FC95200986A3E /* courseReviewTVC.xib */; };
+		300BBEE4214FF9A000986A3E /* courseLessonTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBEE2214FF9A000986A3E /* courseLessonTVC.swift */; };
+		300BBEE5214FF9A000986A3E /* courseLessonTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBEE3214FF9A000986A3E /* courseLessonTVC.xib */; };
+		300BBEE8214FFB0C00986A3E /* courseAuthorProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBEE6214FFB0C00986A3E /* courseAuthorProfileTVC.swift */; };
+		300BBEE9214FFB0C00986A3E /* courseAuthorProfileTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 300BBEE7214FFB0C00986A3E /* courseAuthorProfileTVC.xib */; };
+		3029B5CC214AD67F00555A31 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029B5CB214AD67F00555A31 /* EditVC.swift */; };
 		302BE9A62135AB100007BBE8 /* TimerProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A52135AB100007BBE8 /* TimerProgressBar.swift */; };
 		302BE9A82135ACB30007BBE8 /* customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A72135ACB30007BBE8 /* customColors.swift */; };
 		302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302BE9A92135BF860007BBE8 /* CountDownTimer.swift */; };
@@ -15,19 +36,55 @@
 		302C85F8213EF7BC008471FF /* Hymn For The Weekend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */; };
 		302C91C32134751B0045EF02 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C22134751B0045EF02 /* TimerVC.swift */; };
 		302C91C92134765F0045EF02 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C82134765F0045EF02 /* ProfileVC.swift */; };
+		302DD5B82143ACC2008B9033 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 302DD5B72143ACC2008B9033 /* GoogleService-Info.plist */; };
 		302F9994213D3293002F8729 /* EndingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9992213D3293002F8729 /* EndingBell.mp3 */; };
 		302F9995213D3293002F8729 /* RepeatingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9993213D3293002F8729 /* RepeatingBell.mp3 */; };
 		302F9997213D53C2002F8729 /* AmbientSoundCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302F9996213D53C2002F8729 /* AmbientSoundCVC.swift */; };
 		3045AF5721311762006FADB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045AF5621311762006FADB0 /* AppDelegate.swift */; };
 		3045AF5C21311762006FADB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5A21311762006FADB0 /* Main.storyboard */; };
 		3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3045AF5D21311764006FADB0 /* Assets.xcassets */; };
+		3053ED792146BA4B005A9E24 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053ED782146BA4A005A9E24 /* GradientView.swift */; };
+		305A183A214011A100594CE1 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A1839214011A100594CE1 /* CoursesVC.swift */; };
+		305A183D21402D6C00594CE1 /* CoursesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305A183C21402D6C00594CE1 /* CoursesCVC.swift */; };
+		30A150FA215222B30051E58C /* StatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A150F9215222B30051E58C /* StatsVC.swift */; };
+		30A527442154217200DABFF2 /* UserStatsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A527422154217200DABFF2 /* UserStatsTVC.swift */; };
+		30A527452154217200DABFF2 /* UserStatsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A527432154217200DABFF2 /* UserStatsTVC.xib */; };
+		30A527482154290200DABFF2 /* GlobalStatsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A527462154290200DABFF2 /* GlobalStatsTVC.swift */; };
+		30A527492154290200DABFF2 /* GlobalStatsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A527472154290200DABFF2 /* GlobalStatsTVC.xib */; };
+		30A5274C2154395F00DABFF2 /* StatsHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5274A2154395F00DABFF2 /* StatsHeaderTVC.swift */; };
+		30A5274D2154395F00DABFF2 /* StatsHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A5274B2154395F00DABFF2 /* StatsHeaderTVC.xib */; };
 		30B13AA821370F8D00909C7C /* MeditationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AA721370F8D00909C7C /* MeditationVC.swift */; };
 		30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AA9213712DD00909C7C /* SelectionVC.swift */; };
 		30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */; };
 		30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */; };
+		30E69EDC2143C1D70005CF77 /* launchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E69EDB2143C1D70005CF77 /* launchVC.swift */; };
+		AF63F22734C14DE5D0354CAD /* Pods_Meditateathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2136D52B5DF6468CAED8253D /* Pods_Meditateathon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ECEF9B0F7F7F3D01C9ABCB4 /* Pods-Meditateathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditateathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meditateathon/Pods-Meditateathon.debug.xcconfig"; sourceTree = "<group>"; };
+		2136D52B5DF6468CAED8253D /* Pods_Meditateathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditateathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3002503A214B846A000A46EF /* AboutCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutCourseVC.swift; path = /Users/Badsewal/Documents/swiftProjects/Meditateathon/Meditateathon/Courses/AboutCourseVC.swift; sourceTree = "<absolute>"; };
+		3002503C214B851A000A46EF /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTVC.swift; path = /Users/Badsewal/Documents/swiftProjects/Meditateathon/Meditateathon/Profile/ProfileTVC.swift; sourceTree = "<absolute>"; };
+		300BBEBB214FB4EA00986A3E /* courseImageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseImageTVC.swift; sourceTree = "<group>"; };
+		300BBEBC214FB4EA00986A3E /* courseImageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseImageTVC.xib; sourceTree = "<group>"; };
+		300BBEC2214FB67200986A3E /* courseHeadingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseHeadingTVC.swift; sourceTree = "<group>"; };
+		300BBEC3214FB67200986A3E /* courseHeadingTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseHeadingTVC.xib; sourceTree = "<group>"; };
+		300BBEC6214FB72300986A3E /* courseDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseDetailTVC.swift; sourceTree = "<group>"; };
+		300BBEC7214FB72300986A3E /* courseDetailTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseDetailTVC.xib; sourceTree = "<group>"; };
+		300BBECA214FB7D700986A3E /* courseDescriptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseDescriptionTVC.swift; sourceTree = "<group>"; };
+		300BBECB214FB7D700986A3E /* courseDescriptionTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseDescriptionTVC.xib; sourceTree = "<group>"; };
+		300BBECE214FB89100986A3E /* courseAudioReplyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseAudioReplyTVC.swift; sourceTree = "<group>"; };
+		300BBECF214FB89100986A3E /* courseAudioReplyTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseAudioReplyTVC.xib; sourceTree = "<group>"; };
+		300BBED2214FC01B00986A3E /* audioReplyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioReplyCVC.swift; sourceTree = "<group>"; };
+		300BBED3214FC01B00986A3E /* audioReplyCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = audioReplyCVC.xib; sourceTree = "<group>"; };
+		300BBED6214FC95200986A3E /* courseReviewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseReviewTVC.swift; sourceTree = "<group>"; };
+		300BBED7214FC95200986A3E /* courseReviewTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseReviewTVC.xib; sourceTree = "<group>"; };
+		300BBEE2214FF9A000986A3E /* courseLessonTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseLessonTVC.swift; sourceTree = "<group>"; };
+		300BBEE3214FF9A000986A3E /* courseLessonTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseLessonTVC.xib; sourceTree = "<group>"; };
+		300BBEE6214FFB0C00986A3E /* courseAuthorProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseAuthorProfileTVC.swift; sourceTree = "<group>"; };
+		300BBEE7214FFB0C00986A3E /* courseAuthorProfileTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = courseAuthorProfileTVC.xib; sourceTree = "<group>"; };
+		3029B5CB214AD67F00555A31 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditVC.swift; path = /Users/Badsewal/Documents/swiftProjects/Meditateathon/Meditateathon/Profile/EditVC.swift; sourceTree = "<absolute>"; };
 		302BE9A52135AB100007BBE8 /* TimerProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProgressBar.swift; sourceTree = "<group>"; };
 		302BE9A72135ACB30007BBE8 /* customColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customColors.swift; sourceTree = "<group>"; };
 		302BE9A92135BF860007BBE8 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
@@ -36,6 +93,7 @@
 		302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hymn For The Weekend.mp3"; sourceTree = "<group>"; };
 		302C91C22134751B0045EF02 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		302C91C82134765F0045EF02 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		302DD5B72143ACC2008B9033 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		302F9992213D3293002F8729 /* EndingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndingBell.mp3; sourceTree = "<group>"; };
 		302F9993213D3293002F8729 /* RepeatingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RepeatingBell.mp3; sourceTree = "<group>"; };
 		302F9996213D53C2002F8729 /* AmbientSoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundCVC.swift; sourceTree = "<group>"; };
@@ -44,10 +102,22 @@
 		3045AF5B21311762006FADB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3045AF5D21311764006FADB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3045AF6221311764006FADB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3053ED782146BA4A005A9E24 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		305A1839214011A100594CE1 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
+		305A183C21402D6C00594CE1 /* CoursesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCVC.swift; sourceTree = "<group>"; };
+		30A150F9215222B30051E58C /* StatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsVC.swift; sourceTree = "<group>"; };
+		30A527422154217200DABFF2 /* UserStatsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsTVC.swift; sourceTree = "<group>"; };
+		30A527432154217200DABFF2 /* UserStatsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserStatsTVC.xib; sourceTree = "<group>"; };
+		30A527462154290200DABFF2 /* GlobalStatsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStatsTVC.swift; sourceTree = "<group>"; };
+		30A527472154290200DABFF2 /* GlobalStatsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlobalStatsTVC.xib; sourceTree = "<group>"; };
+		30A5274A2154395F00DABFF2 /* StatsHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsHeaderTVC.swift; sourceTree = "<group>"; };
+		30A5274B2154395F00DABFF2 /* StatsHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsHeaderTVC.xib; sourceTree = "<group>"; };
 		30B13AA721370F8D00909C7C /* MeditationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationVC.swift; sourceTree = "<group>"; };
 		30B13AA9213712DD00909C7C /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
 		30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundVC.swift; sourceTree = "<group>"; };
 		30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
+		30E69EDB2143C1D70005CF77 /* launchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = launchVC.swift; sourceTree = "<group>"; };
+		7BA5593F23F9796F205CECF3 /* Pods-Meditateathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditateathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditateathon/Pods-Meditateathon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +125,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF63F22734C14DE5D0354CAD /* Pods_Meditateathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300BBEC1214FB53C00986A3E /* TVCells */ = {
+			isa = PBXGroup;
+			children = (
+				300BBEBB214FB4EA00986A3E /* courseImageTVC.swift */,
+				300BBEBC214FB4EA00986A3E /* courseImageTVC.xib */,
+				300BBEC2214FB67200986A3E /* courseHeadingTVC.swift */,
+				300BBEC3214FB67200986A3E /* courseHeadingTVC.xib */,
+				300BBEC6214FB72300986A3E /* courseDetailTVC.swift */,
+				300BBEC7214FB72300986A3E /* courseDetailTVC.xib */,
+				300BBECA214FB7D700986A3E /* courseDescriptionTVC.swift */,
+				300BBECB214FB7D700986A3E /* courseDescriptionTVC.xib */,
+				300BBECE214FB89100986A3E /* courseAudioReplyTVC.swift */,
+				300BBECF214FB89100986A3E /* courseAudioReplyTVC.xib */,
+				300BBED2214FC01B00986A3E /* audioReplyCVC.swift */,
+				300BBED3214FC01B00986A3E /* audioReplyCVC.xib */,
+				300BBED6214FC95200986A3E /* courseReviewTVC.swift */,
+				300BBED7214FC95200986A3E /* courseReviewTVC.xib */,
+				300BBEE2214FF9A000986A3E /* courseLessonTVC.swift */,
+				300BBEE3214FF9A000986A3E /* courseLessonTVC.xib */,
+				300BBEE6214FFB0C00986A3E /* courseAuthorProfileTVC.swift */,
+				300BBEE7214FFB0C00986A3E /* courseAuthorProfileTVC.xib */,
+			);
+			name = TVCells;
+			path = ../../TVCells;
+			sourceTree = "<group>";
+		};
+		3029B5CA214AD5E000555A31 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3029B5CB214AD67F00555A31 /* EditVC.swift */,
+				3002503C214B851A000A46EF /* ProfileTVC.swift */,
+				302C91C82134765F0045EF02 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		302BE9AB2135C0BE0007BBE8 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +186,7 @@
 		302BE9AC2135C0EC0007BBE8 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				3053ED782146BA4A005A9E24 /* GradientView.swift */,
 				302C12FA213160CA006EB79D /* SignInVC.swift */,
 				302C12F821315FAB006EB79D /* SignUpVC.swift */,
 			);
@@ -90,6 +198,8 @@
 			children = (
 				3045AF5521311762006FADB0 /* Meditateathon */,
 				3045AF5421311762006FADB0 /* Products */,
+				911A5920F26CEBAD6A7AA290 /* Pods */,
+				60351995AB069E4E788E5456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,15 +215,44 @@
 			isa = PBXGroup;
 			children = (
 				3045AF5621311762006FADB0 /* AppDelegate.swift */,
-				302C91C82134765F0045EF02 /* ProfileVC.swift */,
-				302BE9AC2135C0EC0007BBE8 /* Auth */,
+				30E69EDB2143C1D70005CF77 /* launchVC.swift */,
 				30E0BCD921365FF5007E6DA4 /* Sounds */,
+				302BE9AC2135C0EC0007BBE8 /* Auth */,
+				305A183B214011D300594CE1 /* Courses */,
+				3029B5CA214AD5E000555A31 /* Profile */,
 				302BE9AB2135C0BE0007BBE8 /* Timer */,
+				30A150FB215222D30051E58C /* Stats */,
 				3045AF5A21311762006FADB0 /* Main.storyboard */,
 				3045AF5D21311764006FADB0 /* Assets.xcassets */,
 				3045AF6221311764006FADB0 /* Info.plist */,
+				302DD5B72143ACC2008B9033 /* GoogleService-Info.plist */,
 			);
 			path = Meditateathon;
+			sourceTree = "<group>";
+		};
+		305A183B214011D300594CE1 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				3002503A214B846A000A46EF /* AboutCourseVC.swift */,
+				305A1839214011A100594CE1 /* CoursesVC.swift */,
+				305A183C21402D6C00594CE1 /* CoursesCVC.swift */,
+				300BBEC1214FB53C00986A3E /* TVCells */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		30A150FB215222D30051E58C /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				30A150F9215222B30051E58C /* StatsVC.swift */,
+				30A527422154217200DABFF2 /* UserStatsTVC.swift */,
+				30A527432154217200DABFF2 /* UserStatsTVC.xib */,
+				30A527462154290200DABFF2 /* GlobalStatsTVC.swift */,
+				30A527472154290200DABFF2 /* GlobalStatsTVC.xib */,
+				30A5274A2154395F00DABFF2 /* StatsHeaderTVC.swift */,
+				30A5274B2154395F00DABFF2 /* StatsHeaderTVC.xib */,
+			);
+			path = Stats;
 			sourceTree = "<group>";
 		};
 		30E0BCD921365FF5007E6DA4 /* Sounds */ = {
@@ -127,6 +266,23 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		60351995AB069E4E788E5456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2136D52B5DF6468CAED8253D /* Pods_Meditateathon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		911A5920F26CEBAD6A7AA290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ECEF9B0F7F7F3D01C9ABCB4 /* Pods-Meditateathon.debug.xcconfig */,
+				7BA5593F23F9796F205CECF3 /* Pods-Meditateathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3045AF6521311764006FADB0 /* Build configuration list for PBXNativeTarget "Meditateathon" */;
 			buildPhases = (
+				D706DDB1EAE115756A04A5B0 /* [CP] Check Pods Manifest.lock */,
 				3045AF4F21311762006FADB0 /* Sources */,
 				3045AF5021311762006FADB0 /* Frameworks */,
 				3045AF5121311762006FADB0 /* Resources */,
+				B8061EDB02538FD23B7154C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,12 +347,70 @@
 				302C85F8213EF7BC008471FF /* Hymn For The Weekend.mp3 in Resources */,
 				30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */,
 				3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */,
+				300BBEBE214FB4EA00986A3E /* courseImageTVC.xib in Resources */,
+				30A527452154217200DABFF2 /* UserStatsTVC.xib in Resources */,
+				300BBEC9214FB72300986A3E /* courseDetailTVC.xib in Resources */,
 				3045AF5C21311762006FADB0 /* Main.storyboard in Resources */,
+				30A5274D2154395F00DABFF2 /* StatsHeaderTVC.xib in Resources */,
+				300BBECD214FB7D700986A3E /* courseDescriptionTVC.xib in Resources */,
+				300BBED5214FC01B00986A3E /* audioReplyCVC.xib in Resources */,
+				30A527492154290200DABFF2 /* GlobalStatsTVC.xib in Resources */,
+				300BBED1214FB89100986A3E /* courseAudioReplyTVC.xib in Resources */,
 				302F9994213D3293002F8729 /* EndingBell.mp3 in Resources */,
+				300BBEC5214FB67200986A3E /* courseHeadingTVC.xib in Resources */,
+				300BBEE5214FF9A000986A3E /* courseLessonTVC.xib in Resources */,
+				300BBEE9214FFB0C00986A3E /* courseAuthorProfileTVC.xib in Resources */,
+				300BBED9214FC95200986A3E /* courseReviewTVC.xib in Resources */,
+				302DD5B82143ACC2008B9033 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8061EDB02538FD23B7154C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Meditateathon/Pods-Meditateathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meditateathon/Pods-Meditateathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D706DDB1EAE115756A04A5B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meditateathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3045AF4F21311762006FADB0 /* Sources */ = {
@@ -204,14 +420,34 @@
 				302C12F921315FAB006EB79D /* SignUpVC.swift in Sources */,
 				302F9997213D53C2002F8729 /* AmbientSoundCVC.swift in Sources */,
 				302C91C92134765F0045EF02 /* ProfileVC.swift in Sources */,
+				3002503B214B846A000A46EF /* AboutCourseVC.swift in Sources */,
+				300BBECC214FB7D700986A3E /* courseDescriptionTVC.swift in Sources */,
 				302BE9A82135ACB30007BBE8 /* customColors.swift in Sources */,
+				30A150FA215222B30051E58C /* StatsVC.swift in Sources */,
+				300BBED8214FC95200986A3E /* courseReviewTVC.swift in Sources */,
+				300BBEC8214FB72300986A3E /* courseDetailTVC.swift in Sources */,
 				3045AF5721311762006FADB0 /* AppDelegate.swift in Sources */,
+				300BBED0214FB89100986A3E /* courseAudioReplyTVC.swift in Sources */,
 				302BE9A62135AB100007BBE8 /* TimerProgressBar.swift in Sources */,
+				3053ED792146BA4B005A9E24 /* GradientView.swift in Sources */,
 				30B13AA821370F8D00909C7C /* MeditationVC.swift in Sources */,
+				30A527442154217200DABFF2 /* UserStatsTVC.swift in Sources */,
 				30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */,
 				302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */,
+				3002503D214B851B000A46EF /* ProfileTVC.swift in Sources */,
+				300BBEC4214FB67200986A3E /* courseHeadingTVC.swift in Sources */,
+				300BBEBD214FB4EA00986A3E /* courseImageTVC.swift in Sources */,
+				30A5274C2154395F00DABFF2 /* StatsHeaderTVC.swift in Sources */,
 				30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */,
+				305A183A214011A100594CE1 /* CoursesVC.swift in Sources */,
+				305A183D21402D6C00594CE1 /* CoursesCVC.swift in Sources */,
 				302C91C32134751B0045EF02 /* TimerVC.swift in Sources */,
+				300BBEE4214FF9A000986A3E /* courseLessonTVC.swift in Sources */,
+				3029B5CC214AD67F00555A31 /* EditVC.swift in Sources */,
+				30A527482154290200DABFF2 /* GlobalStatsTVC.swift in Sources */,
+				300BBED4214FC01B00986A3E /* audioReplyCVC.swift in Sources */,
+				300BBEE8214FFB0C00986A3E /* courseAuthorProfileTVC.swift in Sources */,
+				30E69EDC2143C1D70005CF77 /* launchVC.swift in Sources */,
 				302C12FB213160CA006EB79D /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +582,7 @@
 		};
 		3045AF6621311764006FADB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECEF9B0F7F7F3D01C9ABCB4 /* Pods-Meditateathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +602,7 @@
 		};
 		3045AF6721311764006FADB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA5593F23F9796F205CECF3 /* Pods-Meditateathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

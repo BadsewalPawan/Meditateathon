@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="KGk-i7-Jjw" customClass="courseAudioReplyTVC" customModule="Meditateathon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="224.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Audio replies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiO-0a-El5">
+                        <rect key="frame" x="8" y="11" width="359" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="359" id="9nh-w7-HOZ"/>
+                            <constraint firstAttribute="height" constant="21" id="Du4-lJ-Gnv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This course includes 25 community question and 21 audio replies from cara" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp5-jL-Pn1">
+                        <rect key="frame" x="8" y="39" width="359" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="359" id="CCc-wH-nrV"/>
+                            <constraint firstAttribute="height" constant="40" id="Yr6-wV-a5u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YPW-mu-Gl7">
+                        <rect key="frame" x="8" y="88" width="359" height="126"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="126" id="YZi-Y9-Zoe"/>
+                            <constraint firstAttribute="width" constant="359" id="lSi-tt-1Hx"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pnw-8l-sRO">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="7" minY="7" maxX="7" maxY="7"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="Ejl-qe-aBi"/>
+                            <outlet property="delegate" destination="-1" id="cNa-Lg-6Yx"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="yiO-0a-El5" secondAttribute="trailing" constant="8" id="3l6-Qm-IqL"/>
+                    <constraint firstAttribute="trailing" secondItem="YPW-mu-Gl7" secondAttribute="trailing" constant="8" id="93e-uH-8C8"/>
+                    <constraint firstItem="Dp5-jL-Pn1" firstAttribute="top" secondItem="yiO-0a-El5" secondAttribute="bottom" constant="7" id="R3T-G2-t5L"/>
+                    <constraint firstItem="yiO-0a-El5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ZGU-3d-VQY"/>
+                    <constraint firstItem="YPW-mu-Gl7" firstAttribute="top" secondItem="Dp5-jL-Pn1" secondAttribute="bottom" constant="9" id="c5I-P8-ajM"/>
+                    <constraint firstAttribute="bottom" secondItem="YPW-mu-Gl7" secondAttribute="bottom" constant="10.5" id="etu-jb-iHy"/>
+                    <constraint firstAttribute="trailing" secondItem="Dp5-jL-Pn1" secondAttribute="trailing" constant="8" id="htW-at-WLp"/>
+                    <constraint firstItem="YPW-mu-Gl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="jXW-pw-0mE"/>
+                    <constraint firstItem="Dp5-jL-Pn1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="kzm-50-dH9"/>
+                    <constraint firstItem="yiO-0a-El5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rNe-V5-Uvj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="audioReplyCV" destination="YPW-mu-Gl7" id="keI-TW-Ns3"/>
+                <outlet property="audioReplyCountHeaderlbl" destination="yiO-0a-El5" id="Lds-7x-ymL"/>
+                <outlet property="audioReplyCountlbl" destination="Dp5-jL-Pn1" id="cfH-pQ-8Bd"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="-36.5"/>
+        </tableViewCell>
+    </objects>
+</document>

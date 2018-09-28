@@ -10,7 +10,8 @@ import UIKit
 
 
 
-class SelectionVC: UIViewController{
+class SelectionVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     
     var countDownDuration:Int! = 300
     var firstBellDuration:Int! = 60
@@ -25,6 +26,7 @@ class SelectionVC: UIViewController{
     @IBOutlet var timerBBtn: UIBarButtonItem!
     @IBOutlet var presetsBBtn: UIBarButtonItem!
     @IBOutlet var timerSelectionView: UIView!
+    @IBOutlet var presetTV: UITableView!
     @IBAction func unwindToSelectionVC(_ sender: UIStoryboardSegue) {}
     
     
@@ -34,6 +36,18 @@ class SelectionVC: UIViewController{
         })
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = presetTV.dequeueReusableCell(withIdentifier: "presetCell")
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
     
     @IBAction func selectionBtnAction(_ sender: UIButton) {
         switch sender.tag{
@@ -88,7 +102,13 @@ class SelectionVC: UIViewController{
         ambientSoundBtn.setTitle(selectedSound, for: .normal)
     }
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presetTV.dataSource = self
+        presetTV.delegate = self
+        timerBBtn.width = (UIScreen.main.bounds.width / 2) - 20
+        presetsBBtn.width = (UIScreen.main.bounds.width / 2) - 20
+    }
     
     
 }

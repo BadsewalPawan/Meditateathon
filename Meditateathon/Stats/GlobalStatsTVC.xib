@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="GlobalStatsTVC" customModule="Meditateathon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-ep-YUr">
+                        <rect key="frame" x="0.0" y="0.0" width="490" height="129"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dc-J4-74S">
+                                <rect key="frame" x="8" y="23" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="SeC-uH-3TZ"/>
+                                    <constraint firstAttribute="width" constant="84" id="hJs-Fu-bRV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="42"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 mins left in Australia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evr-GQ-ZIh">
+                                <rect key="frame" x="101" y="22" width="313" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="AGv-iF-zKY"/>
+                                    <constraint firstAttribute="height" constant="21" id="CDt-3S-VP6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sarah is meditating to learning to surrender" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGf-N0-iek">
+                                <rect key="frame" x="101" y="58" width="313" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="F02-jr-a4J"/>
+                                    <constraint firstAttribute="height" constant="56" id="Isd-Le-wez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2PI-pf-K2h">
+                                <rect key="frame" x="422" y="36" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BcF-FV-PV9"/>
+                                    <constraint firstAttribute="height" constant="60" id="wbX-yk-bB7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NGf-N0-iek" secondAttribute="bottom" constant="15" id="0e4-cd-oOW"/>
+                            <constraint firstItem="5dc-J4-74S" firstAttribute="top" secondItem="Qa1-ep-YUr" secondAttribute="top" constant="23" id="7uy-kX-bad"/>
+                            <constraint firstItem="5dc-J4-74S" firstAttribute="leading" secondItem="Qa1-ep-YUr" secondAttribute="leading" constant="8" id="9Af-JN-7th"/>
+                            <constraint firstAttribute="trailing" secondItem="2PI-pf-K2h" secondAttribute="trailing" constant="8" id="ChI-N9-IYy"/>
+                            <constraint firstAttribute="bottom" secondItem="5dc-J4-74S" secondAttribute="bottom" constant="22" id="LG2-Ay-uKn"/>
+                            <constraint firstItem="Evr-GQ-ZIh" firstAttribute="top" secondItem="Qa1-ep-YUr" secondAttribute="top" constant="22" id="Xgx-1Y-wrn"/>
+                            <constraint firstItem="NGf-N0-iek" firstAttribute="top" secondItem="Evr-GQ-ZIh" secondAttribute="bottom" constant="15" id="ebb-3v-hxI"/>
+                            <constraint firstItem="2PI-pf-K2h" firstAttribute="top" secondItem="Qa1-ep-YUr" secondAttribute="top" constant="36" id="gT5-vv-ZJX"/>
+                            <constraint firstAttribute="bottom" secondItem="2PI-pf-K2h" secondAttribute="bottom" constant="33" id="nBB-hU-Yv8"/>
+                            <constraint firstItem="2PI-pf-K2h" firstAttribute="leading" secondItem="Evr-GQ-ZIh" secondAttribute="trailing" constant="8" id="prb-y0-DxQ"/>
+                            <constraint firstItem="Evr-GQ-ZIh" firstAttribute="leading" secondItem="5dc-J4-74S" secondAttribute="trailing" constant="9" id="pvL-uA-80u"/>
+                            <constraint firstItem="NGf-N0-iek" firstAttribute="leading" secondItem="5dc-J4-74S" secondAttribute="trailing" constant="9" id="r8N-H7-mST"/>
+                            <constraint firstItem="2PI-pf-K2h" firstAttribute="leading" secondItem="NGf-N0-iek" secondAttribute="trailing" constant="8" id="wFs-eU-yoD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qa1-ep-YUr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1zj-ul-9QD"/>
+                    <constraint firstItem="Qa1-ep-YUr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hyy-19-cbl"/>
+                    <constraint firstItem="Qa1-ep-YUr" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="iZs-ah-p5D"/>
+                    <constraint firstItem="Qa1-ep-YUr" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="sJS-9M-kLH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="globalStatsProfileImg" destination="5dc-J4-74S" id="8jr-Rt-UGb"/>
+                <outlet property="globalStatsTimelbl" destination="Evr-GQ-ZIh" id="NGV-xA-qpv"/>
+                <outlet property="globalStatscourseImg" destination="2PI-pf-K2h" id="NOT-A1-xTB"/>
+                <outlet property="globalStatslbl" destination="NGf-N0-iek" id="iV9-iO-xKq"/>
+            </connections>
+            <point key="canvasLocation" x="99" y="-30"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -61,7 +61,7 @@ extension TimerVC:UIPickerViewDelegate,UIPickerViewDataSource {
         }else{
             repeatBtn.isEnabled = true
             repeatBtn.alpha = 1
-            sendDoRepeat = false
+            sendDoRepeat = true
             showHideOpts()
         }
     }

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+
 
 class SignInVC: UIViewController, UITextFieldDelegate{
     
@@ -38,11 +41,21 @@ class SignInVC: UIViewController, UITextFieldDelegate{
                 return
             }
             //databaseAction
-            
-            //MoveToProfilePage
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "userProfileTC")
-            self.present(controller, animated: true, completion: nil)
+            Auth.auth().signIn(withEmail: userEmail, password: userPassword) { (user, error) in
+                if(user != nil){
+                    //MoveToProfilePage
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "userProfileTC")
+                    self.present(controller, animated: true, completion: nil)
+                }else{
+                    self.errorlbl.isHidden = false
+                    if let signInError = error?.localizedDescription{
+                        self.errorlbl.text = signInError
+                    }else{
+                        print("SignIn ERROR")
+                    }
+                }
+            }
         }else{
             performSegue(withIdentifier: "loginRegSegue", sender: Any?.self)
         }

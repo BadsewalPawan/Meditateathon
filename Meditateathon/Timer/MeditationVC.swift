@@ -27,6 +27,7 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
         return countdownTimer
     }()
     
+    
     @IBOutlet var pausePlayBtn: UIButton!
     @IBOutlet var ProgressBar: ProgressBar!
     @IBOutlet var hourlbl: UILabel!
@@ -45,7 +46,8 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
         AudioPlayer.stop()
         finishBtn.isHidden = false
         playEndingBell()
-        intervalTimer.invalidate()
+        if(recievedDoRepeat == true){
+            intervalTimer.invalidate()}
     }
     
     func countdownTime(time: (hours: String, minutes: String, seconds: String)) {
@@ -158,6 +160,9 @@ class MeditationVC: UIViewController, CountdownTimerDelegate{
         if(recievedFirstBellDuration > 0){
             dummyDouble = Double(recievedFirstBellDuration)
             intervalTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(playFirstBell), userInfo: nil, repeats: true)}
+        //fetch uesr current stats
+        /*var minCount:Double!
+        var timeCount:Int!*/
     }
     
     override func viewWillAppear(_ animated: Bool) {

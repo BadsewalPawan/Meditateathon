@@ -11,5 +11,5 @@ import UIKit
 class AmbientSoundCVC: UICollectionViewCell {
     
     @IBOutlet var soundImage: UIImageView!
-
+    
 }

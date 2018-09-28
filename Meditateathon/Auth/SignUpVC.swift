@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+
+var currentUser:User?
 
 extension String {
     func isValidEmail() -> Bool{
@@ -104,11 +108,32 @@ class SignUpVC: UIViewController, UITextFieldDelegate{
             return
         }
         //databaseAction
-        
-        //MoveToProfilePage
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "userProfileTC")
-        self.present(controller, animated: true, completion: nil)
+        Auth.auth().createUser(withEmail: userEmail, password: userPassword) { (user, error) in
+            if (user != nil){
+                currentUser = Auth.auth().currentUser
+                let changeRequest = currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = firstName + " " + lastName
+                changeRequest?.commitChanges { error in
+                    if let error = error {
+                        print("Error While updating")
+                        print(error.localizedDescription)
+                    } else {
+                        // Profile updated.
+                    }
+                }
+                //MoveToProfilePage
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "userProfileTC")
+                self.present(controller, animated: true, completion: nil)
+            }else{
+                self.errorlbl.isHidden = false
+                if let signUpError = error?.localizedDescription{
+                    self.errorlbl.text = signUpError
+                }else{
+                    print("SignUp ERROR")
+                }
+            }
+        }
     }
     
     override func viewDidLoad() {
