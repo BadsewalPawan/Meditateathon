@@ -31,7 +31,6 @@ class AboutCourseVC: UIViewController, UITableViewDataSource, UITableViewDelegat
             return cell
         }else if(indexPath.row == 2){
             let cell = Bundle.main.loadNibNamed("courseDetailTVC", owner: self, options: nil)?.first as! courseDetailTVC
-            
             cell.courseAuthorlbl.adjustsFontSizeToFitWidth = true
             cell.courseNetDurationlbl.adjustsFontSizeToFitWidth = true
             cell.coursePerDayDurationlbl.adjustsFontSizeToFitWidth = true
@@ -51,8 +50,11 @@ class AboutCourseVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         }else if(indexPath.row == 5){
             let cell = Bundle.main.loadNibNamed("courseReviewTVC", owner: self, options: nil)?.first as! courseReviewTVC
             return cell
-        }else{   //indexPath.row == 6
+        }else if(indexPath.row == 6){   //indexPath.row == 6
             let cell = Bundle.main.loadNibNamed("courseLessonTVC", owner: self, options: nil)?.first as! courseLessonTVC
+            return cell
+        }else{
+            let cell = Bundle.main.loadNibNamed("courseAuthorProfileTVC", owner: self, options: nil)?.first as! courseAuthorProfileTVC
             return cell
         }
     }

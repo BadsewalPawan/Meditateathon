@@ -36,6 +36,8 @@
 		302C85F8213EF7BC008471FF /* Hymn For The Weekend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */; };
 		302C91C32134751B0045EF02 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C22134751B0045EF02 /* TimerVC.swift */; };
 		302C91C92134765F0045EF02 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C91C82134765F0045EF02 /* ProfileVC.swift */; };
+		302DA88721C52BE200615F07 /* GraphStatsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302DA88521C52BE200615F07 /* GraphStatsTVC.swift */; };
+		302DA88821C52BE200615F07 /* GraphStatsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302DA88621C52BE200615F07 /* GraphStatsTVC.xib */; };
 		302DD5B82143ACC2008B9033 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 302DD5B72143ACC2008B9033 /* GoogleService-Info.plist */; };
 		302F9994213D3293002F8729 /* EndingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9992213D3293002F8729 /* EndingBell.mp3 */; };
 		302F9995213D3293002F8729 /* RepeatingBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 302F9993213D3293002F8729 /* RepeatingBell.mp3 */; };
@@ -53,11 +55,14 @@
 		30A527492154290200DABFF2 /* GlobalStatsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A527472154290200DABFF2 /* GlobalStatsTVC.xib */; };
 		30A5274C2154395F00DABFF2 /* StatsHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5274A2154395F00DABFF2 /* StatsHeaderTVC.swift */; };
 		30A5274D2154395F00DABFF2 /* StatsHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A5274B2154395F00DABFF2 /* StatsHeaderTVC.xib */; };
+		30ADB47722096A630067E5EA /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ADB47622096A630067E5EA /* InAppPurchase.swift */; };
 		30B13AA821370F8D00909C7C /* MeditationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AA721370F8D00909C7C /* MeditationVC.swift */; };
 		30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AA9213712DD00909C7C /* SelectionVC.swift */; };
 		30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */; };
 		30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */; };
 		30E69EDC2143C1D70005CF77 /* launchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E69EDB2143C1D70005CF77 /* launchVC.swift */; };
+		30EA307921DFAF4700AD4CE5 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA307821DFAF4700AD4CE5 /* BarChart.swift */; };
+		30EA307B21DFAFD800AD4CE5 /* BarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA307A21DFAFD800AD4CE5 /* BarEntry.swift */; };
 		AF63F22734C14DE5D0354CAD /* Pods_Meditateathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2136D52B5DF6468CAED8253D /* Pods_Meditateathon.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +98,8 @@
 		302C85F7213EF7BC008471FF /* Hymn For The Weekend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hymn For The Weekend.mp3"; sourceTree = "<group>"; };
 		302C91C22134751B0045EF02 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		302C91C82134765F0045EF02 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		302DA88521C52BE200615F07 /* GraphStatsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphStatsTVC.swift; sourceTree = "<group>"; };
+		302DA88621C52BE200615F07 /* GraphStatsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphStatsTVC.xib; sourceTree = "<group>"; };
 		302DD5B72143ACC2008B9033 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		302F9992213D3293002F8729 /* EndingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndingBell.mp3; sourceTree = "<group>"; };
 		302F9993213D3293002F8729 /* RepeatingBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RepeatingBell.mp3; sourceTree = "<group>"; };
@@ -112,11 +119,14 @@
 		30A527472154290200DABFF2 /* GlobalStatsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlobalStatsTVC.xib; sourceTree = "<group>"; };
 		30A5274A2154395F00DABFF2 /* StatsHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsHeaderTVC.swift; sourceTree = "<group>"; };
 		30A5274B2154395F00DABFF2 /* StatsHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsHeaderTVC.xib; sourceTree = "<group>"; };
+		30ADB47622096A630067E5EA /* InAppPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
 		30B13AA721370F8D00909C7C /* MeditationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationVC.swift; sourceTree = "<group>"; };
 		30B13AA9213712DD00909C7C /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
 		30B13AAB2137130F00909C7C /* AmbientSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundVC.swift; sourceTree = "<group>"; };
 		30E0BCD721365FE8007E6DA4 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
 		30E69EDB2143C1D70005CF77 /* launchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = launchVC.swift; sourceTree = "<group>"; };
+		30EA307821DFAF4700AD4CE5 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		30EA307A21DFAFD800AD4CE5 /* BarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarEntry.swift; sourceTree = "<group>"; };
 		7BA5593F23F9796F205CECF3 /* Pods-Meditateathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditateathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meditateathon/Pods-Meditateathon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +224,7 @@
 		3045AF5521311762006FADB0 /* Meditateathon */ = {
 			isa = PBXGroup;
 			children = (
+				30ADB47622096A630067E5EA /* InAppPurchase.swift */,
 				3045AF5621311762006FADB0 /* AppDelegate.swift */,
 				30E69EDB2143C1D70005CF77 /* launchVC.swift */,
 				30E0BCD921365FF5007E6DA4 /* Sounds */,
@@ -251,6 +262,10 @@
 				30A527472154290200DABFF2 /* GlobalStatsTVC.xib */,
 				30A5274A2154395F00DABFF2 /* StatsHeaderTVC.swift */,
 				30A5274B2154395F00DABFF2 /* StatsHeaderTVC.xib */,
+				30EA307A21DFAFD800AD4CE5 /* BarEntry.swift */,
+				30EA307821DFAF4700AD4CE5 /* BarChart.swift */,
+				302DA88521C52BE200615F07 /* GraphStatsTVC.swift */,
+				302DA88621C52BE200615F07 /* GraphStatsTVC.xib */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -317,6 +332,7 @@
 				TargetAttributes = {
 					3045AF5221311762006FADB0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -347,6 +363,7 @@
 				302C85F8213EF7BC008471FF /* Hymn For The Weekend.mp3 in Resources */,
 				30E0BCD821365FE8007E6DA4 /* BackgroundMusic.mp3 in Resources */,
 				3045AF5E21311764006FADB0 /* Assets.xcassets in Resources */,
+				302DA88821C52BE200615F07 /* GraphStatsTVC.xib in Resources */,
 				300BBEBE214FB4EA00986A3E /* courseImageTVC.xib in Resources */,
 				30A527452154217200DABFF2 /* UserStatsTVC.xib in Resources */,
 				300BBEC9214FB72300986A3E /* courseDetailTVC.xib in Resources */,
@@ -375,15 +392,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Meditateathon/Pods-Meditateathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -427,16 +446,20 @@
 				300BBED8214FC95200986A3E /* courseReviewTVC.swift in Sources */,
 				300BBEC8214FB72300986A3E /* courseDetailTVC.swift in Sources */,
 				3045AF5721311762006FADB0 /* AppDelegate.swift in Sources */,
+				30EA307B21DFAFD800AD4CE5 /* BarEntry.swift in Sources */,
 				300BBED0214FB89100986A3E /* courseAudioReplyTVC.swift in Sources */,
 				302BE9A62135AB100007BBE8 /* TimerProgressBar.swift in Sources */,
 				3053ED792146BA4B005A9E24 /* GradientView.swift in Sources */,
 				30B13AA821370F8D00909C7C /* MeditationVC.swift in Sources */,
 				30A527442154217200DABFF2 /* UserStatsTVC.swift in Sources */,
 				30B13AAA213712DD00909C7C /* SelectionVC.swift in Sources */,
+				30ADB47722096A630067E5EA /* InAppPurchase.swift in Sources */,
 				302BE9AA2135BF860007BBE8 /* CountDownTimer.swift in Sources */,
 				3002503D214B851B000A46EF /* ProfileTVC.swift in Sources */,
 				300BBEC4214FB67200986A3E /* courseHeadingTVC.swift in Sources */,
 				300BBEBD214FB4EA00986A3E /* courseImageTVC.swift in Sources */,
+				30EA307921DFAF4700AD4CE5 /* BarChart.swift in Sources */,
+				302DA88721C52BE200615F07 /* GraphStatsTVC.swift in Sources */,
 				30A5274C2154395F00DABFF2 /* StatsHeaderTVC.swift in Sources */,
 				30B13AAC2137130F00909C7C /* AmbientSoundVC.swift in Sources */,
 				305A183A214011A100594CE1 /* CoursesVC.swift in Sources */,
@@ -595,7 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Meditateathon.Meditateathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -615,7 +638,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Meditateathon.Meditateathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -33,13 +33,13 @@ extension TimerVC:UIPickerViewDelegate,UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         switch component {
         case 0:
-            return NSAttributedString(string: "\(row) h", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+            return NSAttributedString(string: "\(row) h", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         case 1:
-            return NSAttributedString(string: "\(row) m", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+            return NSAttributedString(string: "\(row) m", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         case 2:
-            return NSAttributedString(string: "\(row) s", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+            return NSAttributedString(string: "\(row) s", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         default:
-            return NSAttributedString(string: "", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+            return NSAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         }
     }
     
